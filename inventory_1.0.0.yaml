@@ -410,6 +410,7 @@ info:
   version: 1.0.0
   title: inventory
   x-ibm-name: inventory
+  description: Test
 schemes:
   - https
 consumes:
@@ -429,8 +430,6 @@ x-ibm-configuration:
   enforced: true
   testable: true
   gateway: datapower-api-gateway
-  cors:
-    enabled: true
   assembly:
     execute:
       - invoke:
@@ -456,3 +455,7 @@ x-ibm-configuration:
     Sandbox:
       properties:
         target-url: 'https://apic-pot-inventory-api.mybluemix.net'
+  application-authentication:
+    certificate: false
+  cors:
+    enabled: true
