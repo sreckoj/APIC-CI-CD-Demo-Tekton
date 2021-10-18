@@ -410,7 +410,6 @@ info:
   version: 1.0.0
   title: inventory
   x-ibm-name: inventory
-  description: Test
 schemes:
   - https
 consumes:
